@@ -114,8 +114,7 @@ impl SparseLinearSystem {
             len,
             len,
             len * len,
-            Some(Symmetry::PositiveDefinite(Storage::Full)),
-            false,
+            Sym::YesFull
         )
         .unwrap();
         let b = Vector::new(len);
